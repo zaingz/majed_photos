@@ -1,0 +1,170 @@
+.portfolio_box{
+
+  margin-top: 0px;
+  padding: 0px;
+
+
+
+  .foot_nav{
+    margin-top: 5%;
+    position:relative;
+
+
+  }
+  ul{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    display: inline-block;
+    list-style-type: none;
+    li{
+      float: left;
+      text-align: center;
+      a{
+        margin: 50px;
+        font-size: 120%;
+
+        text-decoration: none;
+
+        width: 100%;
+
+        color:lighten( #2E2F30, 15% ) ;
+        font-weight: 600;
+        text-shadow: none;
+        &::before {
+          color:lighten( #2E2F30, 45% ) ;
+          content: attr(data-hover);
+          position: absolute;
+          transition: transform 0.3s, opacity 0.3s;
+        }
+
+        &:hover::before,
+        &:focus::before {
+          transform: scale(0.9);
+          opacity: 0;
+        }
+      }
+    }}
+
+
+  .images_box{
+    padding: 0px;
+
+    .images{
+
+      .image{padding: 0px;background-size: cover; height:688px; opacity:1;overflow:hidden;
+
+        .overlay    {
+          background:rgba(0,0,0,.55);
+          height: 100%;
+          text-align: center;
+          vertical-align: middle;
+          line-height: 688px;
+
+          opacity:0;
+          -webkit-transition: opacity .25s ease;
+          -moz-transition: opacity .25s ease;
+          .caption{font-family:Helvetica;
+            font-weight:700;
+            color:rgba(255,255,255,.85);
+            font-size:66px;}
+        }
+        &:hover .overlay {
+          opacity:1;}
+      }
+      .wali{height:428px;
+      .overlay{ height: 100%;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 428px;}
+      }
+
+
+
+
+
+    }
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+  .view_portfolio {
+
+    padding: 5px;
+    background-color: #009688;
+    padding: 0px;
+    z-index: 99;
+
+    text-align: center;
+    vertical-align: middle;
+    height: 150px;
+
+    .text{
+
+    }
+
+    a {
+
+      font-size: 1em;
+      color: #fff;
+      text-decoration: none;
+
+      width: 100%;
+
+      /* Effect 15: scale down, reveal */
+
+      color: rgba(255, 255, 255, 0.5);
+      font-weight: 700;
+      text-shadow: none;
+
+      &::before {
+        color: #fff;
+        content: attr(data-hover);
+        position: absolute;
+        transition: transform 0.3s, opacity 0.3s;
+      }
+
+      &:hover::before,
+      &:focus::before {
+        transform: scale(0.9);
+        opacity: 0;
+      }
+    }
+  }
+
+
+#big{ font-size: 12em; font-weight: 100; bottom:53px; position: relative;  }
+
+  .full_portfolio{
+
+    background-color: #FFF;
+    padding: 0px;
+    .indi_pic{
+      padding: 0px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+
+  }
+}
+
+
+
+
+
+
+
+

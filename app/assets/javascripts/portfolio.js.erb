@@ -1,0 +1,18 @@
+jQuery(window).trigger('resize').trigger('scroll');
+$(document).ready(function(){
+
+    var waypoint = new Waypoint({
+        element: document.getElementById('sticker'),
+        handler: function(direction) {
+
+            if(direction==="down") {
+                $("#sticker").css({"position": "fixed", "top": "0", "height": "85px"});
+                $(".foot_nav").css({"margin-top": "2.1%"});
+            }
+            else{
+                $("#sticker").css({"position": "inherit", "top": "", "height": ""});
+                $(".foot_nav").css({"margin-top": ""});
+            }
+        }
+    })
+});

@@ -1,0 +1,100 @@
+var PortfolioBox = React.createClass({
+
+    getInitialState: function() {
+        return {
+            portfolioVisible: false
+        };
+    },
+    loadMore: function(e){
+            e.preventDefault();
+        this.setState({
+            portfolioVisible: true
+        })
+        },
+
+    render: function(){
+
+        var isSelected = this.state.portfolioVisible;
+        var style = {
+            'display': ''
+        };
+        if (!isSelected) {
+            style = {
+                'display': 'none'
+            };
+        }
+
+
+        var style2 = {
+            'display': ''
+        };
+        if (isSelected) {
+            style2 = {
+                'display': 'none'
+            };
+        }
+
+
+         return(
+
+            <div className="row portfolio_box">
+                <div className="col-md-12 images_box">
+
+                      <Image />
+
+
+
+                </div>
+
+                <div className="text-center view_portfolio col-md-12"  id="sticker">
+                    <div  className="text wow zoomInDown" style={style2} data-wow-delay="0.1s">
+                        <a id="big" href="#"  data-hover="+" onClick={this.loadMore}>+</a>
+                    </div>
+
+                    <div className="foot_nav text-center" style={style}>
+                        <ul className="nav_filters">
+                            <li><a href="#"  data-hover="Portfolio">Portfolio</a></li>
+                            <li><a href="#"  data-hover="Projects">Projects</a></li>
+                            <li><a href="#"  data-hover="Blog">Blog</a></li>
+                            <li><a href="#"  data-hover="Events">Events</a></li>
+                            <li><a href="#"  data-hover="Contact">Contact</a></li>
+                            <li><a href="#"  data-hover="Event">Event</a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+
+
+
+
+                <div className="col-md-12 full_portfolio" style={style}>
+
+                    <div className="indi_pic col-md-12">
+                        <img src="<%= asset_path('l5.jpg')%>" />
+                    </div>
+                    <div className="indi_pic col-md-12">
+                        <img src="<%= asset_path('l3.jpg')%>" />
+                    </div>
+                    <div className="indi_pic col-md-12">
+                        <img src="<%= asset_path('l2.jpg')%>" />
+                    </div>
+                    <div className="indi_pic col-md-12">
+                        <img src="<%= asset_path('l1.jpg')%>" />
+                    </div>
+                    <div className="indi_pic col-md-12">
+                        <img src="<%= asset_path('l6.jpg')%>" />
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+
+        );
+    }
+
+
+});
