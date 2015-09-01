@@ -1,0 +1,48 @@
+var AboutHeader = React.createClass({
+
+    componentDidMount: function() {
+
+    },
+
+    render: function(){
+
+        return(
+                <div className="row about_header">
+
+                    <OverlayMenu />
+                    <h1 className="text-center">About</h1>
+
+                    <div className="about_main col-md-12">
+                        <div className="about_opt col-md-5">
+
+                            <ul>
+                                <li><a data-hover="History">History</a></li>
+                                <li><a data-hover="History">History</a></li>
+                                <li><a data-hover="History">History</a></li>
+                                <li><a data-hover="History">History</a></li>
+                            </ul>
+
+                        </div>
+                        <div className="about_opt_content col-md-7">
+
+                            <span className="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing </span>
+
+                            <ul className="">
+                                <li>First to tenth Exhibitions held by Kuwait Voluntary Center (2005 – 2010)</li>
+                                <li>Fourth Exhibition held by Friends Of Light – KSA (2005).</li>
+                                <li>First Personal Exhibition – London 2006.</li>
+                                <li>any variations of passages of Lorem Ipsum availab</li>
+
+
+                            </ul>
+
+                        </div>
+                    </div>
+
+
+                </div>
+        );
+    }
+
+
+});

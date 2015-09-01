@@ -1,5 +1,24 @@
 var PortfolioBox = React.createClass({
 
+    componentDidMount: function() {
+        jQuery(window).trigger('resize').trigger('scroll');
+        var waypoint = new Waypoint({
+            element: document.getElementById('sticker'),
+            handler: function(direction) {
+
+                if(direction==="down") {
+                    $("#sticker").css({"position": "fixed", "top": "0", "height": "85px"});
+                    $(".foot_nav").css({"margin-top": "2.2%"});
+                }
+                else{
+                    $("#sticker").css({"position": "inherit", "top": "", "height": ""});
+                    $(".foot_nav").css({"margin-top": ""});
+                }
+            }
+        });
+
+    },
+
     getInitialState: function() {
         return {
             portfolioVisible: false
@@ -7,9 +26,13 @@ var PortfolioBox = React.createClass({
     },
     loadMore: function(e){
             e.preventDefault();
+        $('html, body').animate({
+            scrollTop: 3050
+        }, 1000);
         this.setState({
             portfolioVisible: true
-        })
+        });
+
         },
 
     render: function(){
@@ -53,12 +76,11 @@ var PortfolioBox = React.createClass({
 
                     <div className="foot_nav text-center" style={style}>
                         <ul className="nav_filters">
-                            <li><a href="#"  data-hover="Portfolio">Portfolio</a></li>
-                            <li><a href="#"  data-hover="Projects">Projects</a></li>
-                            <li><a href="#"  data-hover="Blog">Blog</a></li>
-                            <li><a href="#"  data-hover="Events">Events</a></li>
-                            <li><a href="#"  data-hover="Contact">Contact</a></li>
-                            <li><a href="#"  data-hover="Event">Event</a></li>
+                            <li><a href="#"  data-hover="Wild Life">Wild Life</a></li>
+                            <li><a href="#"  data-hover="Kenya">Kenya</a></li>
+                            <li><a href="#"  data-hover="Kuwait">Kuwait</a></li>
+                            <li><a href="#"  data-hover="Travel">Travel</a></li>
+                            <li><a href="#"  data-hover="Random">Random</a></li>
                         </ul>
                     </div>
 
@@ -68,7 +90,7 @@ var PortfolioBox = React.createClass({
 
 
 
-                <div className="col-md-12 full_portfolio" style={style}>
+                <div id="sex" className="col-md-12 full_portfolio" style={style}>
 
                     <div className="indi_pic col-md-12">
                         <img src="<%= asset_path('l5.jpg')%>" />

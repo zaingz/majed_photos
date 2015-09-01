@@ -1,0 +1,89 @@
+// Place all the styles related to the about controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.about_header{
+
+
+
+  background: image_url('l5.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  min-height: 678px;
+
+  h1{
+    padding-top: 18%;
+    padding-bottom: 21%;
+    color:#FFF;
+    font-size: 10em;
+    font-weight: 900;
+    letter-spacing: 9px;
+  }
+  .about_main {
+    background-color: #2E2F30;
+    min-height: 800px;
+    color: #FFF;
+    padding: 0px;
+  .about_opt{
+    background-color: #009688;
+    min-height: 800px;
+    color: #FFF;
+    text-align: center;
+    font-size: 6em;
+
+    ul{text-decoration: none;list-style: none;margin-top: 12%;padding:5px; li{padding: 20px;
+      a {
+
+        color: #fff;
+        text-decoration: none;
+
+        width: 100%;
+
+        /* Effect 15: scale down, reveal */
+
+        color: rgba(0, 0, 0, 0.2);
+        font-weight: 100;
+        text-shadow: none;
+
+        &::before {
+          color: #fff;
+          content: attr(data-hover);
+          position: absolute;
+          transition: transform 0.3s, opacity 0.3s;
+        }
+
+        &:hover::before,
+        &:focus::before {
+          transform: scale(0.9);
+          opacity: 0;
+        }
+      }
+
+      }}
+  }
+    .about_opt_content{
+      background-color: #F9A530;
+      min-height: 800px;
+      padding-top: 60px;
+      padding-left: 60px;
+      span{
+
+        color: #FFF;
+        text-align: center;
+        font-size: 2em;
+      }
+      ul{
+        margin-top: 10%;
+        font-size: 1.5em;
+      }
+    }
+
+
+
+  }
+}
+
+

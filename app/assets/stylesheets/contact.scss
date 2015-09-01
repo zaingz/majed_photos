@@ -1,0 +1,76 @@
+// Place all the styles related to the contact controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.contact_box{
+
+  background: image_url('l6.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  min-height: 678px;
+
+  h1{
+    padding-top: 17%;
+    padding-bottom: 20%;
+    color:#FFF;
+    font-size: 10em;
+    font-weight: 900;
+    letter-spacing: 9px;
+  }
+  .contact_form_box {
+    min-height: 728px;
+    background-color: #009688;
+    padding: 70px;
+
+
+
+    .input_filed {
+    padding-top: 5%;
+    input {
+      font-size: 2em;
+      width: 100%;
+      height: 60px;
+    }
+
+    textarea {
+      font-size: 2em;
+      width: 100%;
+      height: 170px;
+    }
+  }
+    .send{
+      text-align: right;
+      padding-top: 3%;
+      a {
+        font-size: 3em;
+        color: #fff;
+        text-decoration: none;
+
+        width: 100%;
+
+
+
+        color: rgba(0,0,0,0.2);
+        font-weight: 700;
+        text-shadow: none;
+
+
+        &::before {
+          color: #fff;
+          content: attr(data-hover);
+          position: absolute;
+          transition: transform 0.3s, opacity 0.3s;
+        }
+
+        &:hover::before,
+        &:focus::before {
+          transform: scale(0.9);
+          opacity: 0;
+        }
+
+      }
+  }
+  }
+}

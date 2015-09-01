@@ -1,0 +1,65 @@
+var IndiEvent = React.createClass({
+
+    componentDidMount: function() {
+        new WOW().init();
+    },
+
+    render: function(){
+
+        return(
+                <div className="row indi_event">
+
+                    <OverlayMenu />
+
+                    <h1 className="text-center">Photo Summit</h1>
+
+
+                    <div className="blog_meta col-md-12 wow zoomInDown" data-wow-delay="0.05s">
+                        <div className="wrapper">
+
+                            <div className="col-md-8 text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.
+                            </div>
+
+                            <div className="col-md-2 col-md-offset-1 ">
+                                <a className="btn btn-default btn-lg butt" href="#">Join this event</a>
+                             </div>
+
+                        </div>
+                    </div>
+
+                    <div className="event_description col-md-12">
+                        <div className="wrapper text-center">
+                            <div className="attendices">96 people are going</div>
+                            <div className="date">August 26, 2015</div>
+                            <div className="venue">Palm Jamerha</div>
+                        </div>
+
+                    </div>
+
+                    <div className="project_main col-md-12">
+
+                        <div className="col-md-12 indi_item">
+                            <img src="<%= asset_path('l5.jpg')%>" />
+
+                        </div>
+
+                        <div className="col-md-12 indi_item">
+                            <img src="<%= asset_path('l4.jpg')%>" />
+                        </div>
+
+
+                        <div className="col-md-12 indi_item">
+                            <img src="<%= asset_path('l7.jpg')%>" />
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+        );
+    }
+
+
+});

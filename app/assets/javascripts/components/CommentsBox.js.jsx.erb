@@ -1,0 +1,114 @@
+var CommentsBox = React.createClass({
+
+    componentDidMount: function() {
+
+
+    },
+
+    getInitialState: function() {
+        return {
+            portfolioVisible: false
+        };
+    },
+    loadMore: function(e){
+        e.preventDefault();
+
+        this.setState({
+            portfolioVisible: true
+        });
+
+    },
+
+    render: function(){
+
+        var isSelected = this.state.portfolioVisible;
+        var style = {
+            'display': ''
+        };
+        if (!isSelected) {
+            style = {
+                'display': 'none'
+            };
+        }
+
+
+        var style2 = {
+            'display': ''
+        };
+        if (isSelected) {
+            style2 = {
+                'display': 'none'
+            };
+        }
+
+
+        return(
+
+                <div className="row comments_box">
+
+
+                    <div style={style2} className="text-center view_comments col-md-12"  id="sticker">
+                        <div  className="text wow zoomInDown" style={style2} data-wow-delay="0.1s">
+                            <a id="big" href="#"  onClick={this.loadMore}><i className="fa fa-comments-o"></i></a>
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+                    <div id="sex" className="col-md-12 full_comments" style={style}>
+
+                     <div className="single_comment col-md-8 col-md-offset-2">
+                         <div className="user_img col-md-2">
+                             <img src="<%= asset_path('l9.jpg')%>" />
+                         </div>
+                         <div className="user_comment col-md-9">
+                             <h3>Chako Wakia</h3>
+
+                             <p>text of the printing and typesetting industry. Lorem Ipsum has been the indus </p>
+
+                         </div>
+
+
+                     </div>
+                        <div className="single_comment col-md-8 col-md-offset-2">
+                            <div className="user_img col-md-2">
+                                <img src="<%= asset_path('l9.jpg')%>" />
+                            </div>
+                            <div className="user_comment col-md-9">
+                                <h3>Chako Wakia</h3>
+
+                                <p>text of the printing and typesetting industry. Lorem Ipsum has been the indus </p>
+
+                            </div>
+
+
+                        </div>
+
+                        <div className="single_comment col-md-8 col-md-offset-2">
+                            <div className="user_img col-md-2">
+                                <img src="<%= asset_path('l9.jpg')%>" />
+                            </div>
+                            <div className="user_comment col-md-9">
+                                <h3>Chako Wakia</h3>
+
+                                <p>text of the printing and typesetting industry. Lorem Ipsum has been the indus </p>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+        );
+    }
+
+
+});

@@ -83,6 +83,32 @@
       letter-spacing: 9px;
     }
 
+    .project_desc{
+
+      color: #FFF;
+      font-size: 1.5em;
+      letter-spacing: 3px;
+      padding: 5px;
+      background-color: #009688;
+      padding: 0px;
+      z-index: 99;
+      transition: all 0.9s ease;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 150px;
+
+      .wrapper{
+        padding-left: 25px;
+        margin-top:2.4%;
+        margin-bottom:2.4%;
+        text-align: left;
+        vertical-align: middle;
+        line-height: 25px;
+
+      }
+    }
+
+
 
     .project_main {
       background-color: #282828;

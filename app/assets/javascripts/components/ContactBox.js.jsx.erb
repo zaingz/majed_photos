@@ -1,0 +1,42 @@
+var ContactBox = React.createClass({
+
+    componentDidMount: function() {
+        new WOW().init();
+    },
+
+    render: function(){
+
+        return(
+                <div className="row contact_box">
+
+                    <OverlayMenu />
+
+                    <h1 className="text-center">Contact</h1>
+
+                    <div className="colo-md-12 contact_form_box text-center">
+
+                        <div className="col-md-8 col-md-offset-2 input_filed wow zoomInDown"   data-wow-delay="0.1s">
+                            <input type="text" className="form-control" placeholder="Your Name"/>
+                        </div>
+
+                        <div className="col-md-8 col-md-offset-2 input_filed wow zoomInDown" data-wow-delay="0.2s">
+                            <input type="text" className="form-control" placeholder="Email Address"/>
+                        </div>
+
+                        <div className="col-md-8 col-md-offset-2 input_filed wow zoomInDown" data-wow-delay="0.3s">
+                            <textarea className="form-control" rows="3" placeholder="Type your Sweet message"></textarea>
+                        </div>
+
+                        <div className="col-md-2 col-md-offset-8 send wow lightSpeedIn" data-wow-delay="0.4s" data-wow-duration="0.7s">
+                            <a href="#"  data-hover="Send">Send</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+        );
+    }
+
+
+});

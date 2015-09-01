@@ -1,0 +1,78 @@
+var IndiVideo = React.createClass({
+
+    componentDidMount: function() {
+        new WOW().init();
+    },
+
+    render: function(){
+
+        return(
+                <div className="row indi_video">
+
+                    <OverlayMenu />
+
+                    <h1 className="text-center"><i className="fa fa-play-circle-o"></i></h1>
+
+
+                    <div className="row comments_box">
+
+
+
+
+
+                        <div id="sex" className="col-md-12 full_comments" >
+
+                            <div className="single_comment col-md-8 col-md-offset-2">
+                                <div className="user_img col-md-2">
+                                    <img src="<%= asset_path('l9.jpg')%>" />
+                                </div>
+                                <div className="user_comment col-md-9">
+                                    <h3>Chako Wakia</h3>
+
+                                    <p>text of the printing and typesetting industry. Lorem Ipsum has been the indus </p>
+
+                                </div>
+
+
+                            </div>
+                            <div className="single_comment col-md-8 col-md-offset-2">
+                                <div className="user_img col-md-2">
+                                    <img src="<%= asset_path('l9.jpg')%>" />
+                                </div>
+                                <div className="user_comment col-md-9">
+                                    <h3>Chako Wakia</h3>
+
+                                    <p>text of the printing and typesetting industry. Lorem Ipsum has been the indus </p>
+
+                                </div>
+
+
+                            </div>
+
+                            <div className="single_comment col-md-8 col-md-offset-2">
+                                <div className="user_img col-md-2">
+                                    <img src="<%= asset_path('l9.jpg')%>" />
+                                </div>
+                                <div className="user_comment col-md-9">
+                                    <h3>Chako Wakia</h3>
+
+                                    <p>text of the printing and typesetting industry. Lorem Ipsum has been the indus </p>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+        );
+    }
+
+
+});
