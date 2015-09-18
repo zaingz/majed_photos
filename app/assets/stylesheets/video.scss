@@ -66,166 +66,125 @@
 }
 
 
-.indi_video{
-
+.indi_video {
 
   background: image_url('l7.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
+  width: 100;
   min-height: 678px;
 
-  h1{
+  h1 {
     padding-top: 18%;
     padding-bottom: 21%;
-    color:#FFF;
+    color: #FFF;
     font-size: 12em;
     font-weight: 100;
     letter-spacing: 9px;
-  }
-
-
-  .blog_meta{
-
-    color: #FFF;
-    font-size: 1.5em;
-    letter-spacing: 2.5px;
-    padding: 5px;
-    background-color: #FFF;
-    padding: 0px;
-    z-index: 99;
-    transition: all 0.9s ease;
-    text-align: center;
-    vertical-align: middle;
-    color:#282828;
-
-
-    .wrapper{
-      padding: 25px;
-      margin-top:5%;
-      margin-bottom:5%;
-      text-align: left;
-      vertical-align: middle;
-      line-height: 35px;
-
-      .text{
-        margin-bottom:4%;
-      }
-      .butt{
-        margin-top:1.5%;
-        letter-spacing: 1px;
-        font-size: 16.5px;
-      }
-    }
-
-
-  }
-
-  .project_main {
-    background-color: #282828;
-    min-height: 800px;
-    color: #FFF;
-    padding: 0px;
-    .indi_item {
-      padding: 0px;
-      margin-top: 0px;
-
-      img {
-        width: 100%;
-
-        height:auto;
-
-      }
-
-    }
-  }
-
-  .blog_publish{
-    background-color: darken(#FFF,50%);
   }
 
   .comments_box{
 
     margin-top: 0px;
     padding: 0px;
-
-
-    .view_comments {
-
-
-      padding: 5px;
-      background-color:darken(#009688,6%);
-      padding: 0px;
-      z-index: 99;
-      transition: all 0.9s ease;
-      text-align: center;
-      vertical-align: middle;
-      height: 150px;
-
-      .text{
-
-      }
-
-      a {
-
-        font-size: 1em;
-        color: #fff;
-        text-decoration: none;
-
-        width: 100%;
-
-        /* Effect 15: scale down, reveal */
-
-        color: rgba(255, 255, 255, 0.9);
-        font-weight: 700;
-        text-shadow: none;
-
-        &::before {
-          color: #fff;
-          content: attr(data-hover);
-          position: absolute;
-          transition: transform 0.3s, opacity 0.3s;
-        }
-
-        &:hover::before,
-        &:focus::before {
-          transform: scale(0.9);
-          opacity: 0;
-        }
-      }
-    }
-
-
-    #big{ font-size: 8em; font-weight: 100; bottom:13px; position: relative;  }
-    .full_comments{
+    color:white;
+    background-color: #FCBE1F;
+    h1{font-size: 2em;padding: 0;color: #282828; margin-top:30px;  }
+    .col-md-8 {
       padding: 0;
-      color:#282828;
-      background-color: darken(#009688,10%);
+      margin: 0;
 
-      .single_comment{
-        padding: 50px;
-        background-color: darken(#009688,10%);
-        border-bottom: solid;
-        border-width: 1px;
-        .user_img{  padding: 0;img{width: 100px;height: 95px;border-radius: 50%;}}
-        .user_comment{padding:10px; color:#CCC; h3{font-weight: 500; font-size: 1.5em;top:55px}p{font-size: 1.2em;}}
+      .video_meta {
 
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        color: white;
+        font-size: 1.12em;
+        margin-bottom: 15px;
       }
+      .video_meta li {
+        display: inline;  padding-top: 100px;
+
+        padding-right: 60px;
+      }
+      .text_wrapper{color:white;margin-top: 4.5%;margin-bottom: 4.5%; p{letter-spacing: 3px;}}
+
     }
+
+  .col-md-3{
+    padding: 0; right: 0;
+    .video_meta_side{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      color: white;
+      font-size: 1.5em;
+      margin-bottom: 15px;
+    }
+    .video_meta_side li {
+      display: inline;  padding-top: 100px;
+
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+    button{width:100%;border-radius: 0;margin-top: 10px;}
   }
 
+    .divider{
+    height: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid white;
+    }
+    .comments_area{padding: 0; margin: 0;
+      h1{margin-bottom: 30px;}
+      .indi_comment{
 
+        display: flex;
 
+        .comment_image{
+          background-color: white;
+          color: #1e1a1b;
+          padding: 40px;
+          border-top: 1px solid #CCC;
 
+          img{
+            margin-right: 30px; margin-top: 13px;
+          }
+          .text_wrapper{width: auto;display: inline-table}
 
+        }
+        .comment_meta_d{
+         margin: 0;padding: 0;
+          padding-left: 10px;
+          div{background-color: white;border-radius: 3px;}
+          .date{padding-top: 22px;padding-bottom: 22px; color: #1e1a1b;text-align: center; font-size: 1.39em;margin-bottom: 5px;  }
+          .quote{background-color: #2E2F30;text-align: center;padding-top: 20px;padding-bottom: 20px;font-size: 0.8em}
+        }
+        .comment_content{
+          padding: 0; margin: 0;
+          .tittle{padding-left: 20px; margin: 0; font-size: 2em; letter-spacing: 2px; h3{margin: 0}}
+          .content{padding-left: 20px; margin: 0; font-size: 1.8em; letter-spacing: 2px; margin-top:20px; }
+        }
+      }
+    }
+    .pagignation{padding: 0;margin: 0; margin-top:40px;margin-bottom: 40px; display: flex; .page_button{padding: 20px; margin-right: 10px; background-color: white; color: #1e1a1b; width: auto} }
+  }
 
+.comments_send{
+  margin: 0;padding: 0;
+  h1{margin-bottom: 30px;}
+  .col-sm-6{padding: 0;}
+  .col-sm-12{padding: 0;}
 
-
-
-
-
-
+  form{padding: 0; margin: 0;
+    textarea{height: 160px; border-radius: 0}
+    input{border-radius: 0}
+  .control-label{text-align: left;}
+  }
+  .send-btn{margin-bottom: 30px;border-radius: 0}
+}
 
 }

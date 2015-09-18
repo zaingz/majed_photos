@@ -17,53 +17,190 @@ var IndiVideo = React.createClass({
                     <div className="row comments_box">
 
 
+                        <div className="col-md-10 col-md-offset-1 " >
+                            <h1>Video Tittle</h1>
 
+                            <div className="col-md-8">
+                                <ul className="video_meta">
+                                    <li><i className="fa fa-calendar"></i>&nbsp; 13 July</li>
+                                    <li><i className="fa fa-commenting"></i> &nbsp;2 Comments</li>
+                                    <li><i className="fa fa-share-alt"></i>&nbsp;307 Shares</li>
+                                    <li><i className="fa fa-eye"></i>&nbsp;528 Views</li>
+                                    <li><i className="fa fa-heart"></i>&nbsp;Likes</li>
+                                </ul>
 
-
-                        <div id="sex" className="col-md-12 full_comments" >
-
-                            <div className="single_comment col-md-8 col-md-offset-2">
-                                <div className="user_img col-md-2">
-                                    <img src="<%= asset_path('l9.jpg')%>" />
+                                <div className="text_wrapper">
+                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
                                 </div>
-                                <div className="user_comment col-md-9">
-                                    <h3>Chako Wakia</h3>
-
-                                    <p>text of the printing and typesetting industry. Lorem Ipsum has been the indus </p>
-
-                                </div>
-
 
                             </div>
-                            <div className="single_comment col-md-8 col-md-offset-2">
-                                <div className="user_img col-md-2">
-                                    <img src="<%= asset_path('l9.jpg')%>" />
-                                </div>
-                                <div className="user_comment col-md-9">
-                                    <h3>Chako Wakia</h3>
-
-                                    <p>text of the printing and typesetting industry. Lorem Ipsum has been the indus </p>
-
-                                </div>
-
-
+                            <div className="col-md-3 col-md-offset-1">
+                                <ul className="video_meta_side">
+                                    <li><i className="fa fa-rss"></i></li>
+                                    <li><i className="fa fa-youtube"></i></li>
+                                    <li><i className="fa fa-google-plus"></i></li>
+                                    <li><i className="fa fa-linkedin"></i></li>
+                                    <li><i className="fa fa-behance"></i></li>
+                                    <li><i className="fa fa-tumblr"></i></li>
+                                </ul>
+                                <button className="btn btn-default">Share on Twitter <i className="fa fa-twitter"></i></button>
+                                <button className="btn btn-default">Share on Facebook <i className="fa fa-facebook"></i></button>
                             </div>
 
-                            <div className="single_comment col-md-8 col-md-offset-2">
-                                <div className="user_img col-md-2">
-                                    <img src="<%= asset_path('l9.jpg')%>" />
+
+
+                            <div className="col-md-12 divider"></div>
+                            <div className="col-md-12 comments_area">
+                                <h1> Comments</h1>
+
+                                <div className="indi_comment">
+                                    <div className="col-md-4 comment_image" >
+                                        <img width="60" height="60" className="img img-circle" src="<%= asset_path('l7.jpg')%>" />
+                                        <div className="text_wrapper ">
+                                            <h3>Maria</h3>
+                                            <h5>maria@baba.com</h5>
+                                        </div>
+                                    </div>
+
+                                    <div className="col-md-1 comment_meta_d">
+                                        <div className="date">May 12</div>
+                                        <div className="quote"> <i className="fa fa-quote-right fa-3x"></i></div>
+                                    </div>
+
+                                    <div className="col-md-7 comment_content clearfix">
+                                        <div className="tittle"><h3>This is great video of my Life</h3></div>
+                                        <div className="content"><h6>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution</h6></div>
+                                    </div>
+
                                 </div>
-                                <div className="user_comment col-md-9">
-                                    <h3>Chako Wakia</h3>
+                                <div className="indi_comment">
+                                    <div className="col-md-4 comment_image" >
+                                        <img width="60" height="60" className="img img-circle" src="<%= asset_path('l7.jpg')%>" />
+                                        <div className="text_wrapper ">
+                                            <h3>Maria</h3>
+                                            <h5>maria@baba.com</h5>
+                                        </div>
+                                    </div>
 
-                                    <p>text of the printing and typesetting industry. Lorem Ipsum has been the indus </p>
+                                    <div className="col-md-1 comment_meta_d">
+                                        <div className="date">May 12</div>
+                                        <div className="quote"> <i className="fa fa-quote-right fa-3x"></i></div>
+                                    </div>
+
+                                    <div className="col-md-7 comment_content clearfix">
+                                        <div className="tittle"><h3>This is great video of my Life</h3></div>
+                                        <div className="content"><h6>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution</h6></div>
+                                    </div>
 
                                 </div>
+                                <div className="indi_comment">
+                                    <div className="col-md-4 comment_image" >
+                                        <img width="60" height="60" className="img img-circle" src="<%= asset_path('l7.jpg')%>" />
+                                        <div className="text_wrapper ">
+                                            <h3>Maria</h3>
+                                            <h5>maria@baba.com</h5>
+                                        </div>
+                                    </div>
 
+                                    <div className="col-md-1 comment_meta_d">
+                                        <div className="date">May 12</div>
+                                        <div className="quote"> <i className="fa fa-quote-right fa-3x"></i></div>
+                                    </div>
+
+                                    <div className="col-md-7 comment_content clearfix">
+                                        <div className="tittle"><h3>This is great video of my Life</h3></div>
+                                        <div className="content"><h6>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution</h6></div>
+                                    </div>
+
+                                </div>
+                                <div className="indi_comment">
+                                    <div className="col-md-4 comment_image" >
+                                        <img width="60" height="60" className="img img-circle" src="<%= asset_path('l7.jpg')%>" />
+                                        <div className="text_wrapper ">
+                                            <h3>Maria</h3>
+                                            <h5>maria@baba.com</h5>
+                                        </div>
+                                    </div>
+
+                                    <div className="col-md-1 comment_meta_d">
+                                        <div className="date">May 12</div>
+                                        <div className="quote"> <i className="fa fa-quote-right fa-3x"></i></div>
+                                    </div>
+
+                                    <div className="col-md-7 comment_content clearfix">
+                                        <div className="tittle"><h3>This is great video of my Life</h3></div>
+                                        <div className="content"><h6>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution</h6></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div className="pagignation col-md-4">
+                                <div className="page_button col-md-1">1</div>
+                                <div className="page_button col-md-1">2</div>
+                                <div className="page_button col-md-1"><i className="fa fa-arrow-right"></i></div>
+                                <div className="page_button col-md-1">Last</div>
+                            </div>
+
+                            <div className="col-md-12 divider"></div>
+                            <div className="col-md-12 comments_send">
+                                <h1>Leave a comment</h1>
+
+                                <form className="form-horizontal">
+                                    <div className="form-group">
+
+                                        <div className="col-sm-6">
+                                            <input type="email" className="form-control" id="inputEmail3" placeholder="" />
+                                            </div>
+                                        <label for="inputEmail3" className="col-sm-2 control-label">Name</label>
+                                        </div>
+
+
+                                    <div className="form-group">
+
+                                        <div className="col-sm-6">
+                                            <input type="email" className="form-control" id="inputEmail3" placeholder="" />
+                                        </div>
+                                        <label for="inputEmail3" className="col-sm-2 control-label">Email</label>
+                                    </div>
+
+
+                                    <div className="form-group">
+
+                                        <div className="col-sm-6">
+                                            <input type="email" className="form-control" id="inputEmail3" placeholder="" />
+                                        </div>
+                                        <label for="inputEmail3" className="col-sm-2 control-label">Tittle</label>
+
+                                    </div>
+                                    <div className="form-group">
+
+                                        <div className="col-sm-12">
+                                            <textarea type="email" className="form-control" id="inputEmail3" placeholder="Your Comment" />
+                                        </div>
+
+
+                                    </div>
+
+
+                                    <div className="form-group">
+
+                                        <button className="btn btn-success btn-lg  send-btn">Send</button>
+
+
+                                    </div>
+
+
+
+                                </form>
 
                             </div>
 
                         </div>
+
+
+
+
 
                     </div>
 
